@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Laporan</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="Asset/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    <img src="Asset/Logo.png" alt="Logo" width="40" height="40"
+                                        class="d-inline-block align-text-top">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lapor.html">Lapor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Materi</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <div class="container mx-auto shadow-lg p-5 mt-5">
+        <h1 class="text-center mb-5">Form Laporan Kekerasan Seksual</h1>
+        <form>
+            <h2>Pelapor</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Nama Lengkap</p>
+                    <input type="text" class="form-control" placeholder="ex. Asep">
+                    <div class="invalid-feedback">Isi Nama Lengkap !</div>
+                </div>
+                <div class="col">
+                    <p>Alamat</p>
+                    <input type="text" class="form-control" placeholder="ex. Jl Bumi dua No 69">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-3">
+                    <p class="">Jenis Identitas</p>
+                    <div class="form-group">
+                        <select class="custom-select form-control" required>
+                            <option value="">Pilih jenis Identitas</option>
+                            <option value="1">Mahasiswa</option>
+                            <option value="2">Dosen</option>
+                            <option value="3">Tenaga Pendidikan</option>
+                            <option value="4">Lainnya</option>
+                        </select>
+                        <div class="invalid-feedback">Example invalid custom select feedback</div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <p class="">No Handphone</p>
+                    <input type="text" class="form-control" placeholder="ex. 0888273712">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-3">
+                    <p class="">No Identitas</p>
+                    <input type="text" class="form-control" placeholder="NIM/NIK/NIP">
+                </div>
+                <div class="col mt-3">
+                    <p class="">Alamat Email</p>
+                    <input type="text" class="form-control" placeholder="Alamat Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-4">
+                    <p>Pelapor Sebagai</p>
+                    <div class="form-group">
+                        <select class="custom-select form-control" required>
+                            <option value="">[Korban/Saksi]</option>
+                            <option value="1">Korban</option>
+                            <option value="2">Saksi</option>
+                        </select>
+                        <div class="invalid-feedback">Example invalid custom select feedback</div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <br>
+                    <p>Unggah File Identitas</p>
+                    <div class="custom-file form-group">
+                        <input type="file" class="custom-file-input form-control" id="customFile validatedCustomFile" required>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mt-4 mb-0">Pelaku</h2>
+            <div class="row">
+                <div class="col mt-3">
+                    <p>Nama Lengkap</p>
+                    <input type="text" class="form-control" placeholder="ex. Agus">
+                </div>
+                <div class="col mt-3">
+                    <p>Jenis Identitas</p>
+                    <div class="form-group">
+                        <select class="custom-select form-control" required>
+                            <option value="">Pilih Jenis Identitas</option>
+                            <option value="1">Mahasiswa</option>
+                            <option value="2">Dosen</option>
+                            <option value="3">Tenaga Pendidikan</option>
+                            <option value="4">Lainnya</option>
+                        </select>
+                        <div class="invalid-feedback">Example invalid custom select feedback</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="mt-4 mb-0">Peristiwa</h2>
+            <div class="row ">
+                <div class="col mt-3">
+                    <p>Waktu Kejadian</p>
+                    <input type="text" class="form-control" placeholder="dd/mm/yy">
+                </div>
+                <div class="col mt-3">
+                    <p>Tempat Kejadian</p>
+                    <input type="text" class="form-control" placeholder="ex. Gedung I Lt. 3">
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col mt-3">
+                    <p>Kronologi</p>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                </div>
+                <div class="col mt-3">
+                    <br>
+                    <p>Unggah File Bukti</p>
+                    <div class="custom-file form-group">
+                        <input type="file" class="custom-file-input form-control" id="customFile validatedCustomFile" required>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-check mt-5">
+                <div class="custom-control custom-checkbox ml-4">
+                    <input type="checkbox" class="custom-control-input form-check-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Data yang saya isi adalah benar dan saya dapat mempertanggung jawabkannya</label>
+                    <div class="invalid-feedback">Example invalid feedback text</div>
+                </div>
+            </div>
+            <div class="form-check mt-2">
+                <div class="custom-control custom-checkbox ml-4">
+                    <input type="checkbox" class="custom-control-input form-check-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Saya bersedia di hubungi untuk proses lebih lanjut</label>
+                    <div class="invalid-feedback">Example invalid feedback text</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+    </main>
+    <br>
+    <footer class="py-5 mt-5">
+        <div class="container border-top ">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-3">
+                    <h5>Satuan Tugas Pencegahan Kekerasan Seksual</h5>
+                    <br>
+                    <p class="mb-md-0">Universitas Pendidikan Indonesia</p>
+                    <p>Kampus Cibiru</p>
+                    <p>Jl. Pendidikan No.15, Cibiru Wetan, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 40625</p>
+                </div>
+                <div class="col-4">
+                    <h5>Sosial Media</h5>
+                    <ul class="nav flex-column mb-md-0">
+                        <!-- List item 1 -->
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <img src="Asset/instagram-icon.webp" alt="Instagram Icon" width="25" height="25" class="me-2"> @SatgasPPKSUPICibiru
+                            </a>
+                        </li>
+                        <!-- List item 2 -->
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <img src="Asset/facebook-icon.webp" alt="Facebook Icon" width="30" height="30" class="me-2"> SatgasPPKSUPICibiru
+                            </a>
+                        </li>
+                        <!-- List item 3 -->
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <img src="Asset/gmail-icon.png" alt="Email Icon" width="30" height="30" class="me-2"> SatgasUPICibiru@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <form>
+                        <h5>Berikan Kami Masukan</h5>
+                        <p>Masukan Ini Akan Menjadi Evaluasi Kami</p>
+                        <div class="input-group-prepend">
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>© 2021 Company, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
